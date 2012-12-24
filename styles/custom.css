@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background: url('../graphics/hex.png');
+}
+p, ol, ul { margin: 10px 0;}
+
+/* HEADER
+================================================== */
+header {
+  background: url('../graphics/dark-linen.png');
+  min-height: 100px;
+  margin: 0 0 20px 0;
+}
+header h1 {
+  color: #FFF;
+  font-size: 40px;
+  margin: 30px 0 0 0;
+  text-shadow: -2px 0 10px #000;
+}
+header h2 {
+  color: #EDEDED;
+  font-weight: normal;
+}
+header #persona {
+  background: url('../graphics/persona.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  float: right;
+  height: 250px;
+  margin: 10px 0 0 0;
+  width: 300px;
+}
+
+/* CONTENT
+================================================== */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -130px; /* the bottom margin is the negative value of the footer's height */
+}
+
+/* FOOTER
+================================================== */
+
+footer {
+  background: url('../graphics/dark-linen.png');
+  min-height: 100px;
+  margin-top: 30px;
+  padding: 20px 0 10px 0;
+}
+.push {
+  height: 130px; /* .push must be the same height as .footer */
+}
+footer h2 {
+  color: white;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 10px 0;
+}
+footer p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+footer a,
+footer a:visited {
+  color: #FFF;
+}
+footer a:hover {
+  color: #999999;
+}
+
+/* ================================================
+    Custom Media Queries
+================================================== */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* line 150, ../sass/custom.scss */
+  nav#main.mobile {
+    color: #FFF;
+    margin-bottom: 20px;
+  }
+}
