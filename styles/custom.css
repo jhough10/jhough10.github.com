@@ -1,93 +1,190 @@
-* {
+body {
+  font-size: 15px;
+}
+
+body {
+  background-image: url("../graphics/retina_wood.png");
+}
+
+/* TYPOGRAPHY */
+p, ul, ol {
+  margin: 0 0 15px 0;
+}
+
+ul ol, ul ul, ol ol, ol ul {
   margin: 0;
 }
-html, body {
-  height: 100%;
-}
-body {
-  background: url('../graphics/hex.png');
-}
-p, ol, ul { margin: 10px 0;}
 
-/* HEADER
-================================================== */
+h1, h2, h3, h4 {
+  color: #15a2ac;
+}
+
+a, a:visited {
+  color: #15a2ac;
+}
+a:hover, a:visited:hover {
+  color: black;
+}
+
+/* HEADER */
 header {
-  background: url('../graphics/dark-linen.png');
-  min-height: 100px;
-  margin: 0 0 20px 0;
+  background-color: #16aab4;
+  box-shadow: 0 0 5px #444444;
 }
-header h1 {
-  color: #FFF;
-  font-size: 40px;
-  margin: 30px 0 0 0;
-  text-shadow: -2px 0 10px #000;
+header nav {
+  margin: 15px 0;
 }
-header h2 {
-  color: #EDEDED;
-  font-weight: normal;
+header nav ul {
+  margin: 0;
 }
-header #persona {
-  background: url('../graphics/persona.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  float: right;
-  height: 250px;
-  margin: 10px 0 0 0;
-  width: 300px;
+header nav ul li {
+  margin: 0 2em 0 0;
+  padding: 0;
+}
+header nav ul li #logo {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1;
+  padding-left: 3px;
+  text-decoration: none;
+  text-indent: 2px;
+}
+header nav ul li a {
+  color: white;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background: none;
+}
+header #follow {
+  padding-top: 8px;
+}
+header #follow a {
+  color: white;
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 5px;
+  text-decoration: none;
+}
+header #follow a:hover {
+  color: black;
 }
 
-/* CONTENT
-================================================== */
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -130px; /* the bottom margin is the negative value of the footer's height */
+#persona {
+  background-color: #efefef;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+#persona img {
+  background-color: white;
+  border: 1px solid #cccccc;
+  height: auto;
+  width: 100%;
 }
 
-/* FOOTER
-================================================== */
+/* CONTENT */
+section {
+  margin: 0;
+}
 
+#resume aside {
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: right;
+}
+#resume article {
+  border-left: 1px solid #cccccc;
+  margin: 0 0 15px 0;
+  padding: 15px;
+}
+
+/* FOOTER */
 footer {
-  background: url('../graphics/dark-linen.png');
-  min-height: 100px;
-  margin-top: 30px;
-  padding: 20px 0 10px 0;
-}
-.push {
-  height: 130px; /* .push must be the same height as .footer */
+  border-top: 1px solid white;
+  min-height: 2em;
+  margin-top: 1.5em;
+  padding: 15px 0;
 }
 footer h2 {
-  color: white;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: bold;
-  margin: 10px 0;
+  font-size: 1em;
 }
-footer p {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
+footer p,
+footer blockquote,
+footer article,
+footer section {
+  font-size: 0.9em;
 }
-footer a,
-footer a:visited {
-  color: #FFF;
+footer a {
+  color: #999999;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
 }
 footer a:hover {
+  color: white;
+}
+footer a:visited {
   color: #999999;
 }
 
-/* ================================================
-    Custom Media Queries
-================================================== */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  /* line 150, ../sass/custom.scss */
-  nav#main.mobile {
-    color: #FFF;
-    margin-bottom: 20px;
+/*  Custom Media Queries  */
+.mobile span {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 520px) {
+  .mobile {
+    position: relative;
+  }
+  .mobile span {
+    background: #ededed;
+    cursor: pointer;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    padding: 15px 0;
+    text-indent: 10px;
+  }
+  .mobile .menuIcon {
+    background: #cccccc;
+    display: block;
+    font-size: 1.8em;
+    height: 35px;
+    padding: 0;
+    position: absolute;
+    text-indent: 3px;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+  }
+  .mobile ul {
+    display: none;
+    width: 100%;
+  }
+  .mobile ul li {
+    display: block;
+    width: 100%;
+  }
+  .mobile ul li a {
+    padding: 15px 0;
+    text-indent: 20px;
+    width: 100%;
+  }
+  .mobile.down span.menuIcon {
+    background: #cccccc;
+    box-shadow: inset 0 0 10px #555555;
   }
 }

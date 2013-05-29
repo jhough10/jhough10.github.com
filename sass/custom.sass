@@ -1,0 +1,130 @@
+@import "core/base"
+
+body
+  background-image: url('../graphics/retina_wood.png')
+
+/* TYPOGRAPHY */
+p, ul, ol
+  margin: $b-margin
+
+ul, ol
+  ol, ul
+    margin: $no-margin
+
+h1, h2, h3, h4
+  color: #15a2ac
+
+a, a:visited
+  color: #15a2ac
+  &:hover
+    color: #000
+
+
+/* HEADER */
+header
+  background-color: #16aab4
+  box-shadow: 0 0 5px #444
+  nav
+    margin: $dh-margin
+    ul
+      margin: 0
+      li
+        margin: 0 2em 0 0
+        padding: 0
+        #logo
+          font-size: 2em
+          font-weight: bold
+          line-height: 1
+          padding-left: 3px
+          text-decoration: none
+          text-indent: 2px
+        a
+          color: #FFF
+          font-size: 1.1em
+          margin: 0
+          padding: 0
+          text-decoration: none
+          &:hover
+            background: none
+  #follow
+    padding-top: 8px
+    a
+      color: #FFF
+      display: inline-block
+      font-size: 1.5em
+      margin: 0 5px
+      text-decoration: none
+      
+      &:hover
+        color: #000
+  
+  
+#main
+
+    
+#persona
+  background-color: #EFEFEF
+  
+  -webkit-transform: rotate(15deg)
+  -moz-transform: rotate(15deg)
+  -ms-transform: rotate(15deg)
+  -o-transform: rotate(15deg)
+  padding: 10px
+  overflow: hidden
+  width: 100%
+  
+  img
+    background-color: #FFF
+    border: 1px solid $grey
+    height: auto
+    width: 100%
+      
+
+/* CONTENT */
+section
+  margin: $no-margin
+
+
+#resume
+  aside
+    margin-bottom: 15px
+    padding: 15px
+    text-align: right
+  article
+    border-left: 1px solid $grey
+    margin: 0 0 15px 0
+    padding: 15px
+
+/* FOOTER */
+footer
+  border-top: 1px solid $white
+  min-height: 2em
+  margin-top: 1.5em
+  padding: $dh-padding
+  h2
+    font-size: $default-font-size
+    
+  p,
+  blockquote,
+  article,
+  section
+    font-size: ($default-font-size - 0.1)
+
+  @include links($lightgrey, $white)
+
+
+/*  Custom Media Queries  */
+
+.mobile
+  span
+    display: none
+
+
+@media screen and (min-width: 320px) and (max-width: 520px)
+  @include navigation-mobile
+        
+
+@media screen and (min-width: 521px) and (max-width: 768px)
+
+
+@media only screen and (max-width: 920px)
