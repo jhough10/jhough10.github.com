@@ -1,0 +1,447 @@
+@import url("grid.css");
+
+/* --------------------------------------------------------
+ *
+ *  JustinHough.com CSS built with Centurion Framework v 3.4
+ *
+ *  Documentation: http://jhough10.github.com/Centurion/get-started.html
+ *  Licensed under GPL and MIT.
+ *
+ * -------------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #555555;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* Clearfix */
+.clearfix:after, .clearfix:before,
+.container:after,
+.container:before {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+* html .clearfix, * html
+.container {
+  height: 1px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .raleway {
+  color: #555555;
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: normal;
+  text-rendering: optimizeLegibility;
+  text-transform: lowercase;
+}
+
+p, li {
+  color: #555555;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+}
+
+li {
+  list-style-type: circle;
+  margin: 0.6em 0 0 2em !important;
+}
+
+
+h1 {
+  font-size: 2.8em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: #15a2ac;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+p, li {
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+a {
+  color: #15a2ac;
+}
+a:hover {
+  color: black;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.responsive {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+}
+
+.sticky-wrapper {
+  height: 72px;
+}
+
+/* Header */
+header {
+  background-color: #15a2ac;
+  height: 80px;
+  width: 100%;
+}
+header section {
+  background: none;
+  min-height: 0;
+}
+
+/* Logo */
+#logo {
+  font-size: 2em;
+}
+#logo a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin-top: 0.7em;
+}
+
+/* Download Button */
+.download-button {
+  border: none;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  background-color: #333333;
+  color: white;
+  display: inline-block;
+  float: right;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 1.7em;
+  outline: 0;
+  padding: 8px 18px;
+  text-decoration: none;
+  vertical-align: middle;
+  zoom: 1;
+}
+.download-button:hover {
+  background-color: #444444;
+  color: white;
+}
+
+section {
+  background: #ededed;
+  padding: 3em 0;
+}
+
+#banner {
+  background: #333333 url("../graphics/page-banner-bkg.jpg") no-repeat center center fixed;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 250px;
+  padding: 4em 0;
+}
+#banner h1 {
+  color: white;
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 4px 4px 0 #222222;
+  white-space: normal;
+}
+
+
+#education {
+  background-color: #CCC;
+}
+
+.job-description {
+  border-bottom: 1px solid #CCC;
+  padding: 1.8em 0;
+}
+.job-description:last-child {
+  border-bottom: none;
+}
+
+
+/* Footer */
+#footer {
+  background: white;
+  border-top: 4px solid #15a2ac;
+  font-size: 0.8em;
+  min-height: 50px;
+  padding: 1.5em 0;
+}
+#footer #statamicLogo {
+  background-image: url("http://cdn.justinhough.com/assets/images/img/statamic-badge-logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 70px;
+}
+#footer #dreamhostLogo {
+  display: inline-block;
+  margin-left: 5px;
+}
+#footer #dreamhostLogo img {
+  vertical-align: middle;
+}
+#footer .footerIcons {
+  float: right;
+  margin-top: 0.8em;
+}
+#footer .footerIcons a {
+  color: #cccccc;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-left: 0.667em;
+}
+#footer .footerIcons a.icon-github:hover {
+  color: black;
+}
+#footer .footerIcons a.icon-twitter:hover {
+  color: #00aced;
+}
+#footer .footerIcons a.icon-googleplus:hover {
+  color: #d94e30;
+}
+#footer .footerIcons a.icon-youtube:hover {
+  color: #b82a27;
+}
+#footer .footerIcons a.icon-linkedin:hover {
+  color: #007fb2;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 920px) {
+  #logo {
+    font-size: 1.8em;
+  }
+  #logo a {
+    margin-top: 0.9em;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  #logo {
+    float: left;
+    font-size: 1.3em;
+    margin-bottom: 0.7em;
+    width: auto;
+  }
+  #logo#content {
+    padding: 2em 0;
+  }
+  #logo aside {
+    display: none;
+  }
+}
+/* Animate */
+.animate {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Animations */
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(30px);
+  }
+
+  80% {
+    -moz-transform: translateY(-10px);
+  }
+
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateY(30px);
+  }
+
+  80% {
+    -o-transform: translateY(-10px);
+  }
+
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
