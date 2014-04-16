@@ -190,7 +190,6 @@ em {
 /* Header */
 header {
   background-color: #15a2ac;
-  height: 80px;
   width: 100%;
 }
 header section {
@@ -201,12 +200,12 @@ header section {
 /* Logo */
 #logo {
   font-size: 2em;
+  margin: 0.8em 0;
 }
 #logo a {
   color: white;
   display: block;
   text-decoration: none;
-  margin-top: 0.7em;
 }
 
 /* Download Button */
