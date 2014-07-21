@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^(.*).yml$ - [F,L]
+RewriteRule ^(.*).yaml$ - [F,L]
+RewriteRule ^(.*).html$ - [F,L]
+RewriteRule ^(.*/)?\.git+ - [F,L]
