@@ -1,4 +1,4 @@
 jhough10.github.com
 ===================
 
-User Page
+Redirected user page to new user account: [http://justinhough.github.io](http://justinhough.github.io)
